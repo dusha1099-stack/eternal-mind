@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101b18">
+  <meta name="description" content="ETERNAL MIND — Монгол орныг нээ.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>ETERNAL MIND — Монголыг нээ</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ETERNAL MIND нүүр"><span class="brand-mark">E</span><span>ETERNAL MIND</span></a>
+    <button class="icon-btn" id="installBtn" hidden>Суулгах</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">MONGOLIA • ADVENTURE • DISCOVERY</p>
+        <h1>Монгол орныг<br><em>өөрөөр мэдэр.</em></h1>
+        <p class="hero-copy">Алсын зам, онгон байгаль, мартагдашгүй газрууд.</p>
+        <a class="primary-btn" href="#discover">Аяллаа эхлүүлэх <span>↗</span></a>
+      </div>
+      <div class="hero-caption">01 / DISCOVER MONGOLIA</div>
+    </section>
+
+    <section class="section intro" id="discover">
+      <div>
+        <p class="eyebrow dark">ӨӨРТӨӨ ЗОРИУЛСАН ЗАМ</p>
+        <h2>Нээх зүйл<br>үргэлж бий.</h2>
+      </div>
+      <p class="intro-text">ETERNAL MIND бол Монголын байгаль, аяллын газруудыг нээж, өөрийн аяллаа төлөвлөхөд туслах платформ.</p>
+    </section>
+
+    <section class="section destinations">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">ОНЦЛОХ ГАЗАР</p><h2>Эхлэх цэгүүд</h2></div>
+        <span class="muted">01 — 03</span>
+      </div>
+      <div class="destination-grid">
+        <button class="place-card yol" data-place="yol" aria-label="Ёлын ам">
+          <span class="place-number">01</span><span class="place-info"><small>ӨМНӨГОВЬ</small><strong>Ёлын ам</strong><span>Мөсөн хавцлын нам гүм</span></span><span class="arrow">↗</span>
+        </button>
+        <button class="place-card steppe" data-place="steppe" aria-label="Монголын тал">
+          <span class="place-number">02</span><span class="place-info"><small>МОНГОЛ ОРОН</small><strong>Уудам тал</strong><span>Хязгааргүй орон зай</span></span><span class="arrow">↗</span>
+        </button>
+        <button class="place-card mountain" data-place="mountain" aria-label="Өндөр уулс">
+          <span class="place-number">03</span><span class="place-info"><small>АДАЛ ЯВДАЛ</small><strong>Өндөр уулс</strong><span>Алсын оргилууд</span></span><span class="arrow">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="feature" id="placeDetail" hidden>
+      <div class="feature-image" id="detailImage"></div>
+      <div class="feature-body">
+        <p class="eyebrow dark">ГАЗРЫН ТУХАЙ</p>
+        <h2 id="detailTitle">Ёлын ам</h2>
+        <p id="detailText">Говийн дундах сэрүүн хавцал.</p>
+        <button class="text-btn" id="closeDetail">Буцах ←</button>
+      </div>
+    </section>
+
+    <section class="section promise">
+      <p class="eyebrow">THE SPIRIT OF THE ROAD</p>
+      <h2>Зүгээр нэг очих газар биш.<br><em>Мэдрэх аялал.</em></h2>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Үндсэн цэс">
+    <a class="active" href="#"><span>⌂</span>Нүүр</a>
+    <a href="#discover"><span>⌕</span>Нээх</a>
+    <a href="#saved" id="savedNav"><span>♡</span>Хадгалсан</a>
+    <a href="#profile"><span>◯</span>Профайл</a>
+  </nav>
+
+  <footer><span>ETERNAL MIND</span><span>FIND YOUR OWN WAY.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
